@@ -15,7 +15,12 @@ import bc780
 class BearCatDriver:
 
     def execute(self, command, argument, receiver):
-        print 'out of loop'
+        if command == 'status':
+            print receiver.testRadio()
+        elif command == 'sample':
+            print receiver.sampleRadio()
+        elif command == 'tune':
+            print receiver.tuneRadio(float(argument))
 
 print 'start driver'
 
