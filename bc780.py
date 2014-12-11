@@ -54,8 +54,6 @@ class Bc780:
         tune scanner to specified frequency
         returns frequency as integer
         """
-        print frequency
         argument = "%8.8d?" % self.floatFreqToInt(frequency)
         result = self.invokeRadio('RF', argument)
         return result
-        
