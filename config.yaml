@@ -1,0 +1,8 @@
+#
+serialPort: /dev/ttyUSB0
+#serialPort: /dev/ttyO0
+#
+serialSpeed: 9600
+#
+serialTimeOut: 10
+#
